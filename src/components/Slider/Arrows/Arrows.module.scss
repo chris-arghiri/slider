@@ -1,0 +1,27 @@
+.Arrows {
+  &__left,
+  &__right {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    font-size: 3vmin;
+    font-weight: 800;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+  }
+
+  &__left:hover,
+  &__right:hover {
+    color: var(--color-white);
+    background-color: hsla(0, 0%, 0%, 0.6);
+    transition: all 0.5s ease-in;
+  }
+
+  &__right {
+    right: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}

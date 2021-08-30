@@ -1,0 +1,39 @@
+.Content {
+  &__active {
+    display: inline-block;
+
+    position: relative;
+    height: var(--slider-height);
+    width: var(--slider-width);
+  }
+
+  &__inactive {
+    display: none;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title,
+  &__description {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+
+    color: var(--color-white);
+
+    font-size: 3vmin;
+    text-align: center;
+  }
+
+  &__description {
+    top: 65%;
+    font-size: 2.5vmin;
+  }
+}
